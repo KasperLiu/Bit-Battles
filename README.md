@@ -37,9 +37,13 @@
 ## 词法分析
 
 -  关键字：
-   **if**  **else**  **return**  **int**  **boolean**  **true**  **false**  **while**
+```
+   if  else  return  int  boolean  true  false  while
+```
    因项目需要额外添加的关键字：
-   **CUR**  **ENEMY**  **RANDOM**
+```
+   CUR  ENEMY  RANDOM
+```
 -  专用符号：
 ```
    +  -  *  /  %  <  <=  >  >=  ==  !=  =  &&  &  ||  |  ;  (  )  [  ]  {  }
