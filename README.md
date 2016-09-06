@@ -229,7 +229,7 @@ return i;
 
 #### 信息输出模块
 
-![](UI-Pictures/Feature_Syntax_Tree.jpg)
+![](UI-Pictures/Feature_Print_LogInfo.jpg)
 
 
 
