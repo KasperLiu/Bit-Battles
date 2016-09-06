@@ -1,5 +1,8 @@
 # Bit-Battles
 编译原理项目 比特大战
+```
+由于项目是学校的课程作业，项目代码不上传至github。且请参考本项目相关内容的个人注明reference。
+```
 
 ## 项目描述
 
@@ -40,7 +43,7 @@
 
 -  JBit语言定义部分
 
-语言定义借助JAVACC工具实现，通过对JAVACC的学习，能使用JJTree来实现语法树的构建，同时实现解析JBit语言的功能。
+语言定义借助JAVACC工具实现，通过对**JAVACC示例代码**的学习，能使用JJTree来实现语法树的构建，同时实现解析JBit语言的功能。
 
 -  可视化界面部分
 
@@ -94,7 +97,8 @@
    type-specifier -> "boolean" | "int"
    Statement -> ";" | LabeledStatement | Block | StatementExpression | IfStatement | WhileStatement | IOStatement ";" | ReturnStatement ";"
    LabeledStatement -> ID ":" Statement
-   Block -> "{" Statement "}"
+   Block -> "{" Statement-list "}"
+   Statement-list -> Statement-list Statement | empty
    StatementExpression -> Assignment ";"
    IfStatement -> "if" "(" Expression ")" Statement | "if" "(" Expression ")" "else" Statement
    WhileStatement -> "while" "(" Expression ")" Statement
