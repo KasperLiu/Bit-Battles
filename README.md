@@ -39,8 +39,11 @@
 为了实现项目问题的描述，定义了一种编程语言为JBit，意为基于JAVA语言上用于描述比特大战(Bit Battles)的语言，开发平台为Windows 10，开发工具有Eclipse、JAVACC。项目大致分为语法定义(JBit语言的定义)和可视化界面(类似编译器)两大部分。
 
 -  JBit语言定义部分
+
 语言定义借助JAVACC工具实现，通过对JAVACC的学习，能使用JJTree来实现语法树的构建，同时实现解析JBit语言的功能。
+
 -  可视化界面部分
+
 界面部分分为4个模块，分别为策略编辑模块、战斗结果显示模块、语法树显示模块以及信息输出模块。
 
 ####1、策略编辑模块
@@ -89,7 +92,7 @@
    CompilationUnit -> VarDeclaration ";" | Statement
    VarDeclaration -> type-specifier ID
    type-specifier -> "boolean" | "int"
-   Statement -> ";" | LabeledStatement | Block | StatementExpression | IfStatement | WhileStatement | IOStatement | ReturnStatement
+   Statement -> ";" | LabeledStatement | Block | StatementExpression | IfStatement | WhileStatement | IOStatement ";" | ReturnStatement ";"
    LabeledStatement -> ID ":" Statement
    Block -> "{" Statement "}"
    StatementExpression -> Assignment ";"
@@ -119,4 +122,57 @@
    UnaryExpression -> "~" UnaryExpression | "!" UnaryExpression | PrimaryExpression
    Mulop -> "*" | "/" | "%"
 ```
+
+## 界面展示
+
+#### 主界面
+
+![](UI-Pictures/Main.jpg)
+
+#### 策略编辑模块
+
+![](UI-Pictures/Feature_Edit_Strategy.jpg)
+
+#### 战斗结果显示模块
+
+![](UI-Pictures/Feature_Battles_Results.jpg)
+
+![](UI-Pictures/AddStrategy.jpg)
+
+![](UI-Pictures/AddStrategy_error_1.jpg)
+
+![](UI-Pictures/AddStrategy_error_2.jpg)
+
+![](UI-Pictures/Start_input.jpg)
+
+![](UI-Pictures/Start_input_error_1.jpg)
+
+![](UI-Pictures/Start_input_error_2.jpg)
+
+![](UI-Pictures/Start_input_error_3.jpg)
+
+![](UI-Pictures/Start_output_1.jpg)
+
+![](UI-Pictures/Start_output_2.jpg)
+
+![](UI-Pictures/Start_output_3.jpg)
+
+![](UI-Pictures/Start_output_4.jpg)
+
+![](UI-Pictures/Start_output_5.jpg)
+
+#### 语法树显示模块
+
+![](UI-Pictures/Feature_Syntax_Tree.jpg)
+
+![](UI-Pictures/Syntax_Tree_output_1.jpg)
+
+![](UI-Pictures/Syntax_Tree_output_2.jpg)
+
+#### 信息输出模块
+
+![](UI-Pictures/Feature_Syntax_Tree.jpg)
+
+
+
 
