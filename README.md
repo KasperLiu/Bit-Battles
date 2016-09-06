@@ -123,6 +123,64 @@
    Mulop -> "*" | "/" | "%"
 ```
 
+## JBit策略描述
+
+-  **永远合作**，每次都选择1
+```
+return 1;
+```
+-  **随机**，每次以某个概率随机选择1，否则选择0
+```
+int i;
+i = RANDOM(3);
+if(i == 3){
+  return 0;
+}
+else{
+  return 1;
+}
+```
+-  **针锋相对**，先选择1，以后每次都选择对方的上一次选择
+```
+if(CUR == 1){
+  return 1;
+}
+else{
+  return ENEMY[CUR-1];
+}
+```
+-  **老实人探测器**，基本上和**针锋相对**一样，只是会随机地选择一次0
+```
+int i;
+if(CUR == 1){
+  return 1;
+}
+else {
+  i = RANDOM(9);
+  if(i == 9){
+	  return 0;
+  }
+  else{
+	  return ENEMY[CUR-1];
+  }
+}
+```
+-  **永不原谅**，一直选择1，一旦对方选择0，则一直选择0
+```
+int i;
+int k;
+i = 1;
+k = 1;
+while((k < CUR) && (i == 1)){
+  if((ENEMY[k]) == 0){
+	  i = 0;
+  }
+  k = k + 1;
+}
+return i;
+```
+
+
 ## 界面展示
 
 #### 主界面
@@ -173,6 +231,10 @@
 
 ![](UI-Pictures/Feature_Syntax_Tree.jpg)
 
+## 
 
+刘学枫
+Kasper Liu
+elysioncs13b@163.com
 
 
