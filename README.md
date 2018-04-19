@@ -92,7 +92,7 @@
 
 -  JBit Language的BNF语法：
 ```
-   CompilationUnit -> VarDeclaration ";" | Statement
+   CompilationUnit -> VarDeclaration ";" | Statement-list
    VarDeclaration -> type-specifier ID
    type-specifier -> "boolean" | "int"
    Statement -> ";" | LabeledStatement | Block | StatementExpression | IfStatement | WhileStatement | IOStatement ";" | ReturnStatement ";"
