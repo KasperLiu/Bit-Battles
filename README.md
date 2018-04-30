@@ -1,7 +1,8 @@
 # Bit-Battles
 编译原理项目 比特大战
 ```
-由于项目是学校的课程作业，项目代码不上传至github。且请参考本项目相关内容的个人注明reference。
+由于项目是学校的课程作业，项目代码不上传至github。
+年代久远，源码已遗失，JAVACC编译语言了解一下，再参考下面的文档整理肯定能写出来的，加油！
 ```
 
 ## 项目描述
@@ -234,16 +235,3 @@ return i;
 #### 信息输出模块
 
 ![](UI-Pictures/Feature_Print_LogInfo.jpg)
-
-
-
-
-
-
-刘学枫
-
-Kasper Liu
-
-elysioncs13b@163.com
-
-
